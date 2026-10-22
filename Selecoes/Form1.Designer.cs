@@ -21,145 +21,168 @@ partial class Form1
         base.Dispose(disposing);
     }
 
-    #region Windows Form Designer generated code
+	#region Windows Form Designer generated code
 
-    /// <summary>
-    /// Required method for Designer support - do not modify
-    /// the contents of this method with the code editor.
-    /// </summary>
-    private void InitializeComponent()
-    {
-        lblTitulo = new System.Windows.Forms.Label();
-        lblCidade = new System.Windows.Forms.Label();
-        cmbCidade = new System.Windows.Forms.ComboBox();
-        lblTurno = new System.Windows.Forms.Label();
-        chkMatutino = new System.Windows.Forms.CheckBox();
-        chkVespertino = new System.Windows.Forms.CheckBox();
-        chkNoturno = new System.Windows.Forms.CheckBox();
-        lblTermosPoliticas = new System.Windows.Forms.Label();
-        chkTermosPoliticas = new System.Windows.Forms.CheckBox();
-        btnCadastrar = new System.Windows.Forms.Button();
-        SuspendLayout();
-        // 
-        // lblTitulo
-        // 
-        lblTitulo.AutoSize = true;
-        lblTitulo.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
-        lblTitulo.Location = new System.Drawing.Point(12, 9);
-        lblTitulo.Name = "lblTitulo";
-        lblTitulo.Size = new System.Drawing.Size(106, 30);
-        lblTitulo.TabIndex = 0;
-        lblTitulo.Text = "Cadastro";
-        // 
-        // lblCidade
-        // 
-        lblCidade.AutoSize = true;
-        lblCidade.Font = new System.Drawing.Font("Segoe UI", 12F);
-        lblCidade.Location = new System.Drawing.Point(12, 47);
-        lblCidade.Name = "lblCidade";
-        lblCidade.Size = new System.Drawing.Size(91, 21);
-        lblCidade.TabIndex = 1;
-        lblCidade.Text = "Sua Cidade:";
-        // 
-        // cmbCidade
-        // 
-        cmbCidade.Font = new System.Drawing.Font("Segoe UI", 12F);
-        cmbCidade.FormattingEnabled = true;
-        cmbCidade.Location = new System.Drawing.Point(18, 79);
-        cmbCidade.Name = "cmbCidade";
-        cmbCidade.Size = new System.Drawing.Size(160, 29);
-        cmbCidade.TabIndex = 2;
-        // 
-        // lblTurno
-        // 
-        lblTurno.AutoSize = true;
-        lblTurno.Font = new System.Drawing.Font("Segoe UI", 12F);
-        lblTurno.Location = new System.Drawing.Point(12, 119);
-        lblTurno.Name = "lblTurno";
-        lblTurno.Size = new System.Drawing.Size(54, 21);
-        lblTurno.TabIndex = 3;
-        lblTurno.Text = "Turno:";
-        // 
-        // chkMatutino
-        // 
-        chkMatutino.Location = new System.Drawing.Point(18, 147);
-        chkMatutino.Name = "chkMatutino";
-        chkMatutino.Size = new System.Drawing.Size(104, 24);
-        chkMatutino.TabIndex = 4;
-        chkMatutino.Text = "Matutino";
-        chkMatutino.UseVisualStyleBackColor = true;
-        // 
-        // chkVespertino
-        // 
-        chkVespertino.Location = new System.Drawing.Point(18, 177);
-        chkVespertino.Name = "chkVespertino";
-        chkVespertino.Size = new System.Drawing.Size(104, 24);
-        chkVespertino.TabIndex = 5;
-        chkVespertino.Text = "Vespertino";
-        chkVespertino.UseVisualStyleBackColor = true;
-        // 
-        // chkNoturno
-        // 
-        chkNoturno.Location = new System.Drawing.Point(18, 207);
-        chkNoturno.Name = "chkNoturno";
-        chkNoturno.Size = new System.Drawing.Size(104, 24);
-        chkNoturno.TabIndex = 6;
-        chkNoturno.Text = "Noturno";
-        chkNoturno.UseVisualStyleBackColor = true;
-        // 
-        // lblTermosPoliticas
-        // 
-        lblTermosPoliticas.AutoSize = true;
-        lblTermosPoliticas.Font = new System.Drawing.Font("Segoe UI", 12F);
-        lblTermosPoliticas.Location = new System.Drawing.Point(12, 242);
-        lblTermosPoliticas.Name = "lblTermosPoliticas";
-        lblTermosPoliticas.Size = new System.Drawing.Size(132, 21);
-        lblTermosPoliticas.TabIndex = 7;
-        lblTermosPoliticas.Text = "Termos e Politicas";
-        // 
-        // chkTermosPoliticas
-        // 
-        chkTermosPoliticas.AutoSize = true;
-        chkTermosPoliticas.Location = new System.Drawing.Point(18, 274);
-        chkTermosPoliticas.Name = "chkTermosPoliticas";
-        chkTermosPoliticas.Size = new System.Drawing.Size(278, 19);
-        chkTermosPoliticas.TabIndex = 8;
-        chkTermosPoliticas.Text = "Aceito todos os Termos e Políticas do programa";
-        chkTermosPoliticas.UseVisualStyleBackColor = true;
-        chkTermosPoliticas.CheckedChanged += chkTermosPoliticas_CheckedChanged;
-        // 
-        // btnCadastrar
-        // 
-        btnCadastrar.AutoSize = true;
-        btnCadastrar.Enabled = false;
-        btnCadastrar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-        btnCadastrar.Location = new System.Drawing.Point(18, 315);
-        btnCadastrar.Name = "btnCadastrar";
-        btnCadastrar.Size = new System.Drawing.Size(92, 43);
-        btnCadastrar.TabIndex = 9;
-        btnCadastrar.Text = "Cadastrar";
-        btnCadastrar.UseVisualStyleBackColor = true;
-        btnCadastrar.Click += btnCadastrar_Click;
-        // 
-        // Form1
-        // 
-        AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-        AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-        ClientSize = new System.Drawing.Size(800, 450);
-        Controls.Add(btnCadastrar);
-        Controls.Add(chkTermosPoliticas);
-        Controls.Add(lblTermosPoliticas);
-        Controls.Add(chkNoturno);
-        Controls.Add(chkVespertino);
-        Controls.Add(chkMatutino);
-        Controls.Add(lblTurno);
-        Controls.Add(cmbCidade);
-        Controls.Add(lblCidade);
-        Controls.Add(lblTitulo);
-        Text = "Form1";
-        ResumeLayout(false);
-        PerformLayout();
-    }
+	/// <summary>
+	/// Required method for Designer support - do not modify
+	/// the contents of this method with the code editor.
+	/// </summary>
+	private void InitializeComponent()
+	{
+		lblTitulo = new Label();
+		lblCidade = new Label();
+		cmbCidade = new ComboBox();
+		lblTurno = new Label();
+		chkMatutino = new CheckBox();
+		chkVespertino = new CheckBox();
+		chkNoturno = new CheckBox();
+		lblTermosPoliticas = new Label();
+		chkTermosPoliticas = new CheckBox();
+		btnCadastrar = new Button();
+		dgvCadastros = new DataGridView();
+		((System.ComponentModel.ISupportInitialize)dgvCadastros).BeginInit();
+		SuspendLayout();
+		// 
+		// lblTitulo
+		// 
+		lblTitulo.AutoSize = true;
+		lblTitulo.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
+		lblTitulo.Location = new Point(12, 9);
+		lblTitulo.Name = "lblTitulo";
+		lblTitulo.Size = new Size(106, 30);
+		lblTitulo.TabIndex = 0;
+		lblTitulo.Text = "Cadastro";
+		// 
+		// lblCidade
+		// 
+		lblCidade.AutoSize = true;
+		lblCidade.Font = new Font("Segoe UI", 12F);
+		lblCidade.Location = new Point(12, 47);
+		lblCidade.Name = "lblCidade";
+		lblCidade.Size = new Size(91, 21);
+		lblCidade.TabIndex = 1;
+		lblCidade.Text = "Sua Cidade:";
+		// 
+		// cmbCidade
+		// 
+		cmbCidade.Font = new Font("Segoe UI", 12F);
+		cmbCidade.FormattingEnabled = true;
+		cmbCidade.Location = new Point(18, 79);
+		cmbCidade.Name = "cmbCidade";
+		cmbCidade.Size = new Size(160, 29);
+		cmbCidade.TabIndex = 2;
+		// 
+		// lblTurno
+		// 
+		lblTurno.AutoSize = true;
+		lblTurno.Font = new Font("Segoe UI", 12F);
+		lblTurno.Location = new Point(12, 119);
+		lblTurno.Name = "lblTurno";
+		lblTurno.Size = new Size(54, 21);
+		lblTurno.TabIndex = 3;
+		lblTurno.Text = "Turno:";
+		// 
+		// chkMatutino
+		// 
+		chkMatutino.Location = new Point(18, 147);
+		chkMatutino.Name = "chkMatutino";
+		chkMatutino.Size = new Size(104, 24);
+		chkMatutino.TabIndex = 4;
+		chkMatutino.Text = "Matutino";
+		chkMatutino.UseVisualStyleBackColor = true;
+		// 
+		// chkVespertino
+		// 
+		chkVespertino.Location = new Point(18, 177);
+		chkVespertino.Name = "chkVespertino";
+		chkVespertino.Size = new Size(104, 24);
+		chkVespertino.TabIndex = 5;
+		chkVespertino.Text = "Vespertino";
+		chkVespertino.UseVisualStyleBackColor = true;
+		// 
+		// chkNoturno
+		// 
+		chkNoturno.Location = new Point(18, 207);
+		chkNoturno.Name = "chkNoturno";
+		chkNoturno.Size = new Size(104, 24);
+		chkNoturno.TabIndex = 6;
+		chkNoturno.Text = "Noturno";
+		chkNoturno.UseVisualStyleBackColor = true;
+		// 
+		// lblTermosPoliticas
+		// 
+		lblTermosPoliticas.AutoSize = true;
+		lblTermosPoliticas.Font = new Font("Segoe UI", 12F);
+		lblTermosPoliticas.Location = new Point(12, 242);
+		lblTermosPoliticas.Name = "lblTermosPoliticas";
+		lblTermosPoliticas.Size = new Size(132, 21);
+		lblTermosPoliticas.TabIndex = 7;
+		lblTermosPoliticas.Text = "Termos e Politicas";
+		// 
+		// chkTermosPoliticas
+		// 
+		chkTermosPoliticas.AutoSize = true;
+		chkTermosPoliticas.Location = new Point(18, 274);
+		chkTermosPoliticas.Name = "chkTermosPoliticas";
+		chkTermosPoliticas.Size = new Size(278, 19);
+		chkTermosPoliticas.TabIndex = 8;
+		chkTermosPoliticas.Text = "Aceito todos os Termos e Políticas do programa";
+		chkTermosPoliticas.UseVisualStyleBackColor = true;
+		chkTermosPoliticas.CheckedChanged += chkTermosPoliticas_CheckedChanged;
+		// 
+		// btnCadastrar
+		// 
+		btnCadastrar.AutoSize = true;
+		btnCadastrar.Enabled = false;
+		btnCadastrar.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+		btnCadastrar.Location = new Point(18, 315);
+		btnCadastrar.Name = "btnCadastrar";
+		btnCadastrar.Size = new Size(92, 43);
+		btnCadastrar.TabIndex = 9;
+		btnCadastrar.Text = "Cadastrar";
+		btnCadastrar.UseVisualStyleBackColor = true;
+		btnCadastrar.Click += btnCadastrar_Click;
+		// 
+		// dgvCadastros
+		// 
+		dgvCadastros.AllowUserToAddRows = false;
+		dgvCadastros.AllowUserToDeleteRows = false;
+		dgvCadastros.AllowUserToResizeColumns = false;
+		dgvCadastros.AllowUserToResizeRows = false;
+		dgvCadastros.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+		dgvCadastros.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+		dgvCadastros.Location = new Point(376, 12);
+		dgvCadastros.Name = "dgvCadastros";
+		dgvCadastros.ReadOnly = true;
+		dgvCadastros.RowHeadersVisible = false;
+		dgvCadastros.Size = new Size(412, 426);
+		dgvCadastros.TabIndex = 10;
+		dgvCadastros.Text = "dataGridView1";
+		// 
+		// Form1
+		// 
+		AutoScaleDimensions = new SizeF(7F, 15F);
+		AutoScaleMode = AutoScaleMode.Font;
+		ClientSize = new Size(800, 450);
+		Controls.Add(dgvCadastros);
+		Controls.Add(btnCadastrar);
+		Controls.Add(chkTermosPoliticas);
+		Controls.Add(lblTermosPoliticas);
+		Controls.Add(chkNoturno);
+		Controls.Add(chkVespertino);
+		Controls.Add(chkMatutino);
+		Controls.Add(lblTurno);
+		Controls.Add(cmbCidade);
+		Controls.Add(lblCidade);
+		Controls.Add(lblTitulo);
+		Name = "Form1";
+		Text = "Form1";
+		((System.ComponentModel.ISupportInitialize)dgvCadastros).EndInit();
+		ResumeLayout(false);
+		PerformLayout();
+	}
+
+	private System.Windows.Forms.DataGridView dgvCadastros;
 
     private System.Windows.Forms.Button btnCadastrar;
 
