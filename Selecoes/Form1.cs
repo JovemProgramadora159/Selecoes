@@ -5,7 +5,7 @@ namespace Selecoes;
 public partial class Form1 : Form
 {
 	private List<string> ListaCidades = ["Vitória", "Vila Velha", "Serra", "Cariacica", "Viana", "Guarapari", "Fundão"];
-	private BindingList<Cadastro> ListaCadastros = [];
+	private BindingList<Cadastro> ListaCadastros = new BindingList<Cadastro>(BD.RecuperarCadastros());
 
 	public Form1()
 	{
@@ -51,20 +51,8 @@ public partial class Form1 : Form
 		if (chkVespertino.Checked) novoCadastro.Turnos.Add("Vespertino");
 		if (chkNoturno.Checked) novoCadastro.Turnos.Add("Noturno");
 		novoCadastro.DataTermoAceito = DateTime.Now;
+		BD.InserirCadastro(novoCadastro);
 		ListaCadastros.Add(novoCadastro);
 	}
 }
 
-public class Cadastro
-{
-	public string Cidade { get; set; }
-	public List<string> Turnos { get; set; } = [];
-	public DateTime DataTermoAceito { get; set; }
-	public string TurnosString
-	{
-		get
-		{
-			return string.Join(", ", Turnos);
-		}
-	}
-}
